@@ -1,0 +1,103 @@
+:root {
+    --Background: #270308;
+    --Light: #f6d4d2;
+    --Dark: #1E0206;
+    --Navy: #2C2440;
+    --Grey: #8E7c89;
+    --MainD: #AE1326;
+    --MainL: #CE6C75;
+    --ContrastL: #33EB7C;
+    /*#A1CD5F, #5FCDC2*/
+    --faded: rgb(0, 0, 0, .6);
+
+    --red: #AE1326;
+    --blue: #34E1EB;
+    --green: #33EB7C;
+    --yellow: #E8EB34;
+    --orange: #EB8F34;
+    --purple: #C16BCF;
+
+    /* Number Variables */
+    --mobilePad: 15px;
+    --smallPad: 20px;
+    --medPad: 30px;
+    --lgPad: 40px;
+    --DesktopPadBody: 40px;
+    --navPad: 130px;
+    --smallNavPad: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--Background);
+    width: 100%;
+}
+
+
+#header-container {
+    background-color: #d45f6f;
+    ;
+    height: 5.5rem;
+}
+
+
+.profile_photo {
+    border: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: auto;
+}
+
+.profile_img {
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.app_container {
+    display: flex;
+    height: 100vh;
+    /* width: 1000px; */
+}
+
+.sidebar {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+}
+
+.panel {
+    flex: 1;
+}
+
+.dashboard_tab {
+    width: 250px;
+    height: 500px;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+.menu_button {
+    text-align: center;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-family: Kanit;
+    cursor: pointer;
+
+}
+
+.menu_button:hover {
+    background-color: rgb(174, 19, 38);
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}

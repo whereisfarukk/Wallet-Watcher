@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Chary makes budgeting as easy as pie, giving you all the tools you need to set and meet your financial goals."
+    />
+    <link
+      rel="shortcut icon"
+      sizes="256x256"
+      href="../static/images/CharyLogoSmall.svg"
+    />
+
+    <!-- Google Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,600&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="sign_up_style.css" /> -->
+
+    <!-- JavaScript links -->
+    <script src="../static/javascript/landing.js"></script>
+    <script src="../static/javascript/script.js"></script>
+
+    <title>Chary</title>
+  </head>
+
+  <body>
+    <div id="header-container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="log_in.html">Sign In</a></li>
+            <li><a href="sign_up.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="content non-header" id="landing-hero">
+      <div id="hero-text">
+        <h1 id="hero1" paint-order="stroke">Spend your money <br />charily!</h1>
+        <h3 id="hero2">
+          Keep track of your daily spendings with Chary; Visualize your expenses
+          and make budgeting plans to achieve your money-saving goals
+        </h3>
+        <div id="hero3">
+          <button id="hero-login" onclick="loginAction()">Log In</button>
+          <button class="cta-button" onclick="signupAction()">
+            Get Started
+          </button>
+        </div>
+        <div class="centered" id="down-icon-container">
+          <img
+            id="down-icon"
+            class="icon floating"
+            src="../static/images/down-icon-light.svg"
+            onclick="downAction()"
+            alt="Down arrow to read more"
+          />
+        </div>
+      </div>
+      <div id="hero-img">
+        <img
+          id="hero-img-svg"
+          src="images/starting_image.svg"
+          alt="Woman holding credit card"
+        />
+      </div>
+    </div>
+    <div class="down_note">
+      <div class="first-section">
+        <img
+          id="down-img"
+          src="images/CustomizeBudgets.svg"
+          alt="Woman holding credit card"
+        />
+        <div class="description">
+          <h3 class="heading">Customize Budgets</h3>
+          <div class="text">
+            For recurring expenses and earnings, we've got you covered! Chary's
+            flexible updating system will allow you to select all, one, or
+            future entries for editing.
+          </div>
+        </div>
+      </div>
+      <div class="first-section">
+        <img
+          id="down-img"
+          src="images/Log Expenses.svg"
+          alt="Woman holding credit card"
+        />
+        <div class="description">
+          <h3 class="heading">Log Expenses</h3>
+          <div class="text">
+            As you make purchases, log the costs through your Chary dashboard.
+            We will update your budgets to reflect the changes and show you all
+            the updated stats!
+          </div>
+        </div>
+      </div>
+      <div class="first-section">
+        <img
+          id="down-img"
+          src="images/View Analytics.svg"
+          alt="Woman holding credit card"
+        />
+        <div class="description" style="margin-bottom: 50px">
+          <h3 class="heading">View Analytics</h3>
+          <div class="text">
+            We'll let you know how you are doing—and if you need to reduce
+            spending to reach your goals. We'll do all the calculations and
+            chart-making for you!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div id="legal">
+        <div class="legal-button">
+          <a href="/privacy">Privacy Policy</a>
+        </div>
+        <span>|</span>
+        <div class="legal-button">
+          <a href="/terms_of_service">Terms of Service</a>
+        </div>
+        <span>|</span>
+        <div class="legal-button">
+          <a href="/contact">Contact</a>
+        </div>
+        <span>|</span>
+        <div class="report-button">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScy5GtuSRAn-IBCe71kLlTfBwwP0fTXXX7eG1fFd_Puev9vbw/viewform?usp=sf_link"
+            alt="Link to report an issue"
+            >Report Issue</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
