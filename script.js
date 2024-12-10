@@ -8,4 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   document.getElementById("profileButton").addEventListener("click", () => {
     window.location.href = "profile.html"; // Change this to the correct path of your expenses page
   });
+  document.getElementById("overviewButton").addEventListener("click", () => {
+    window.location.href = "dashboard.html"; // Change this to the correct path of your expenses page
+  });
 });

@@ -1,0 +1,62 @@
+/*
+ *** General Styles for All Tabs in Dashboard ***
+ */
+
+
+/* 
+#dashboard-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--lgPad);
+    margin-bottom: var(--lgPad);
+} */
+
+/*
+ *** Styles for Left-Hand Side of Dashboard ***
+ */
+
+/* #dashboard-main {
+    grid-column: 2;
+    grid-row: 1;
+    overflow: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5em;
+    background-color: #1e0206;
+} */
+.content {
+    display: grid;
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 80%;
+    height: 200px;
+
+}
+
+#tab-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Only one column for the first div */
+    /* grid-template-rows: auto auto; */
+    /* Two rows: one for the chart and one for the other columns */
+    grid-gap: 20px;
+    /* Space between rows */
+}
+
+.chart {
+    grid-column: span 1;
+    /* Takes the full row */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #1e0206;
+    border-radius: 10px;
+    height: 500px;
+    /* Center the canvas inside the div */
+}
+
+#barchart {
+    background-color: transparent;
+    /* Make the canvas background transparent */
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="earning.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header-container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="log_in.html">Dashbooard</a></li>
+            <button class="profile_photo">
+              <img src="images/profile_photo.svg" alt="" class="profile_img" />
+            </button>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="app_container">
+      <div class="sidebar">
+        <di class="dashboard_tab">
+          <ul>
+            <li class="menu_button" id="overviewButton">Overview</li>
+            <li class="menu_button" id="budgetsButton">Budgets</li>
+            <li class="menu_button" id="earningsButton">Earnings</li>
+            <li class="menu_button" id="expensesButton">Expenses</li>
+            <li class="menu_button" id="profileButton">Profile</li>
+          </ul>
+        </di>
+      </div>
+      <div class="content" id="dashboard-main">
+        <div id="tab-container">
+          <div class="chart">
+            <canvas id="barchart"></canvas>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div id="legal">
+        <div class="legal-button">
+          <a href="/privacy">Privacy Policy</a>
+        </div>
+        <span>|</span>
+        <div class="legal-button">
+          <a href="/terms_of_service">Terms of Service</a>
+        </div>
+        <span>|</span>
+        <div class="legal-button">
+          <a href="/contact">Contact</a>
+        </div>
+        <span>|</span>
+        <div class="report-button">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScy5GtuSRAn-IBCe71kLlTfBwwP0fTXXX7eG1fFd_Puev9vbw/viewform?usp=sf_link"
+            alt="Link to report an issue"
+            >Report Issue</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="/javascript/dashboard/chart1.js" defer></script>
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/dashboard.js"></script>
+  </body>
+</html>
