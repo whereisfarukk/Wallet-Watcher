@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
   document.getElementById("overviewButton").addEventListener("click", () => {
     window.location.href = "dashboard.html"; // Change this to the correct path of your expenses page
   });
+  document.getElementById("budgetsButton").addEventListener("click", () => {
+    window.location.href = "budgets.html"; // Change this to the correct path of your expenses page
+  });
 });
 
 // Get modal

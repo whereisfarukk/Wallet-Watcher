@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="earning.css" />
+    <link rel="stylesheet" href="budgets.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header-container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="log_in.html">Dashbooard</a></li>
+            <button class="profile_photo">
+              <img src="images/profile_photo.svg" alt="" class="profile_img" />
+            </button>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="app_container">
+      <div class="sidebar">
+        <di class="dashboard_tab">
+          <ul>
+            <li class="menu_button" id="overviewButton">Overview</li>
+            <li class="menu_button" id="budgetsButton">Budgets</li>
+            <li class="menu_button" id="earningsButton">Earnings</li>
+            <li class="menu_button" id="expensesButton">Expenses</li>
+            <li class="menu_button" id="profileButton">Profile</li>
+          </ul>
+        </di>
+      </div>
+      <section class="panel">
+        <div class="tab_head">
+          <h1 id="tab-header">Budget</h1>
+          <button id="add-earning-button" class="add-icon">
+            <img src="images/PlusIcon.svg" alt="Add icon" />
+          </button>
+        </div>
+        <div class="filter-container"></div>
+      </section>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close" class="close">&times;</span>
+        <h2>Enter Earning Details</h2>
+        <form id="expenseForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br />
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" name="amount" required /><br />
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required /><br />
+          <label for="category">Category:</label>
+          <input type="text" id="category" name="category" required /><br />
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            cols="50"
+          ></textarea
+          ><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div id="legal">
+        <div class="legal-button">
+          <a href="/privacy">Privacy Policy</a>
+        </div>
+        <span>|</span>
+        <div class="legal-button">
+          <a href="/terms_of_service">Terms of Service</a>
+        </div>
+        <span>|</span>
+        <div class="legal-button">
+          <a href="/contact">Contact</a>
+        </div>
+        <span>|</span>
+        <div class="report-button">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScy5GtuSRAn-IBCe71kLlTfBwwP0fTXXX7eG1fFd_Puev9vbw/viewform?usp=sf_link"
+            alt="Link to report an issue"
+            >Report Issue</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
