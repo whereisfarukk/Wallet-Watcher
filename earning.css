@@ -14,7 +14,7 @@ table {
 }
 
 .tbl-content {
-    height: 300px;
+    height: 400px;
     overflow-x: auto;
     margin-top: 0px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -35,7 +35,7 @@ th {
 }
 
 td {
-    height: 50px;
+    height: 58px;
     padding: 15px;
     text-align: left;
     vertical-align: middle;
@@ -70,6 +70,7 @@ td {
 
 .tab_head {
     margin-left: 40px;
+    margin-bottom: 15px;
     display: grid;
     align-items: center;
     grid-template-columns: 230px 1fr;
