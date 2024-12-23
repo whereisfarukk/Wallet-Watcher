@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         borderColor: Utils.CHART_COLORS.blue,
         backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
         borderWidth: 2,
-        borderRadius: 5,
+        borderRadius: Number.MAX_VALUE,
         borderSkipped: false,
         zIndex: 1,
       },
