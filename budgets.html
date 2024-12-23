@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="profile.css" />
     <link rel="stylesheet" href="earning.css" />
     <link rel="stylesheet" href="budgets.css" />
+
     <title>Document</title>
     <style>
       .panel {
@@ -17,7 +18,7 @@
         width: 100%;
         /* grid-template-columns: repeat(12, 1frs); */
         grid-template-columns: 100px 1fr;
-        grid-template-rows: 40px 150px 40px;
+        grid-template-rows: 40px 150px 1fr;
       }
       .tab_head {
         grid-column: 1 / -1;
@@ -121,6 +122,17 @@
         font-weight: bold;
         border-radius: 10px;
       }
+      #polarChart {
+        width: 550px;
+        height: auto;
+        /* align-items: center; */
+        /* justify-content: center; */
+        margin-left: 400px;
+      }
+      .chart {
+        height: 100%;
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
@@ -174,6 +186,10 @@
           </ul>
           <input type="date" class="date-button" />
         </div>
+        <div class="chart">
+          <canvas id="polarChart"></canvas>
+        </div>
+
         <div class="filter-container"></div>
       </section>
     </div>
@@ -199,6 +215,7 @@
         </form>
       </div>
     </div>
+
     <div class="footer">
       <div id="legal">
         <div class="legal-button">
@@ -224,7 +241,10 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
+    <script src="chart2.js" defer></script>
+
     <script>
       function toggleDropdown() {
         const dropdownMenu = document.querySelector(".dropdown-menu");
